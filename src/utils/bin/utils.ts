@@ -19,16 +19,10 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const gui = async (args: string[]): Promise<string> => {
-  window.open('https://m4tt72.com', '_self');
-
-  return 'Opening GUI version...';
-};
-
 export const email = async (args: string[]): Promise<string> => {
-  window.open('mailto:hi@nm4tt72.com');
+  window.open('0xgingi@0xgingi.com');
 
-  return 'Opening mailto:hi@m4tt72.com...';
+  return 'Opening mailto:0xgingi@0xgingi.com...';
 };
 
 export const vi = async (args: string[]): Promise<string> => {
@@ -50,33 +44,20 @@ export const sudo = async (args?: string[]): Promise<string> => {
 };
 
 export const repo = async (args?: string[]): Promise<string> => {
-  window.open('https://github.com/m4tt72/terminal', '_blank');
+  window.open('https://github.com/0xGingi/terminal', '_blank');
 
   return 'Opening repository...';
 };
 
-export const donate = async (args?: string[]): Promise<string> => {
-  window.open(packageJson.funding.url, '_blank');
-
-  return 'Opening donation url...';
-};
-
 export const banner = (args?: string[]): string => {
   return `
-███╗   ███╗██╗  ██╗████████╗████████╗███████╗██████╗
-████╗ ████║██║  ██║╚══██╔══╝╚══██╔══╝╚════██║╚════██╗
-██╔████╔██║███████║   ██║      ██║       ██╔╝ █████╔╝
-██║╚██╔╝██║╚════██║   ██║      ██║      ██╔╝ ██╔═══╝
-██║ ╚═╝ ██║     ██║   ██║      ██║      ██║  ███████╗
-╚═╝     ╚═╝     ╚═╝   ╚═╝      ╚═╝      ╚═╝  ╚══════╝ v${packageJson.version}
+  
+░█████╗░██╗░░██╗░██████╗░██╗███╗░░██╗░██████╗░██╗
+██╔══██╗╚██╗██╔╝██╔════╝░██║████╗░██║██╔════╝░██║
+██║░░██║░╚███╔╝░██║░░██╗░██║██╔██╗██║██║░░██╗░██║
+██║░░██║░██╔██╗░██║░░╚██╗██║██║╚████║██║░░╚██╗██║
+╚█████╔╝██╔╝╚██╗╚██████╔╝██║██║░╚███║╚██████╔╝██║
+░╚════╝░╚═╝░░╚═╝░╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝ v${packageJson.version}
 
-Type 'help' to see list of available commands.
-
---
-The project is open-source 🎉 type 'repo' to check out the repository.
-
-New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/m4tt72/terminal/tree/master/docs/themes">in the docs</a>.
-New 🎉: New command 'neofetch', for you linux.
---
-`;
+Type 'help' to see list of available commands`;
 };

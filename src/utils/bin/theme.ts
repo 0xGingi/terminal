@@ -9,18 +9,14 @@ export const theme = async (
 Args:
   - ls: list all themes
   - set: set a theme
-  - random: set a random theme
-
-Example: 
-  theme ls # to list all themes
-  theme set Gruvbox # to set a theme`;
+  - random: set a random theme`;
   }
 
   switch (args[0]) {
     case 'ls':
       let result = Themes.map((theme) => theme.name.toLowerCase()).join(', ');
       result += '\n\n';
-      result += `You can preview all these themes <a href="https://github.com/m4tt72/terminal/tree/master/docs/themes">in the docs</a>`;
+      result += ``;
 
       return result;
     case 'set':
