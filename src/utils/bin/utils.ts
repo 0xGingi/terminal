@@ -50,22 +50,5 @@ export const banner = (args?: string[]): string => {
 ╚█████╔╝██╔╝╚██╗╚██████╔╝██║██║░╚███║╚██████╔╝██║
 ░╚════╝░╚═╝░░╚═╝░╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝ v${packageJson.version}
 
-Type 'help' to see list of available commands\nCheck Out The 'monero' command!`;
-};
-export const monero = async (args: string[]): Promise<string> => {
-  return `Check Out My Monero Services!\nPublic Monero RPC: monero.0xgingi.com:18081\nMonero Blockchain Explorer: https://explorer.0xgingi.com\nMonero P2Pool Stats: https://p2pool.0xgingi.com`;
-};
-export const monero_explorer = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://explorer.0xgingi.com');
-  }, 1000);
-
-  return `https://explorer.0xgingi.com`;
-};
-export const p2pool_stats = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://p2pool.0xgingi.com');
-  }, 1000);
-
-  return `https://p2pool.0xgingi.com`;
+Type 'help' to see list of available commands`;
 };
