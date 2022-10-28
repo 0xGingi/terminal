@@ -52,3 +52,10 @@ export const banner = (args?: string[]): string => {
 
 Type 'help' to see list of available commands`;
 };
+export const hackthebox = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://app.hackthebox.com/users/641801');
+  }, 1000);
+
+  return `Opening my HTB Profile`;
+};
