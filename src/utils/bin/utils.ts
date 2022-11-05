@@ -59,3 +59,10 @@ export const hackthebox = async (args?: string[]): Promise<string> => {
 
   return `Opening my HTB Profile`;
 };
+export const onion = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('http://gingiwwd4tl3qedfnzielwdlnghnzztd4qiedvub54j4bj7rtz4u43yd.onion/');
+  }, 1000);
+
+  return `Opening Terminal Onion Link`;
+};
