@@ -66,3 +66,10 @@ export const onion = async (args?: string[]): Promise<string> => {
 
   return `Opening Terminal Onion Link`;
 };
+export const searxng = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://search.0xgingi.com');
+  }, 1000);
+
+  return `Opening My SearxNG Instance`;
+};
