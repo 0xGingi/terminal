@@ -71,5 +71,12 @@ export const searxng = async (args?: string[]): Promise<string> => {
     window.open('https://search.0xgingi.com');
   }, 1000);
 
-  return `Opening My SearxNG Instance`;
+  return `Opening My SearxNG Instance. Use Engine Token 'unlockall' to use Google & Brave. Fuck Bots. `;
+};
+export const searxngtor = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('http://searxyqdegtqksicnwpxa24ipnb2ylmp6iutnnwtazbhup4dit4eeyqd.onion/');
+  }, 1000);
+
+  return `Opening My SearxNG Instance Tor Hidden Service. Use Engine Token 'unlockall' to use Google & Brave. Fuck Bots. `;
 };
