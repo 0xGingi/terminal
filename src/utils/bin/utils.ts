@@ -60,7 +60,3 @@ export const searxngtor = async (args?: string[]): Promise<string> => {
 
   return `Opening My SearxNG Instance Tor Hidden Service. Use Engine Token 'unlockall' to use Google & Brave. Fuck Bots. `;
 };
-export const dns = async (args: string[]): Promise<string> => {
-  return 'Adblock DNS:\n\nIPv4: 5.161.193.201 \n DoH: https://dns.0xgingi.com/dns-query \n DoT: dns.0xgingi.com';
-
-};
