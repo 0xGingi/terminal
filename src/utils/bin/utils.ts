@@ -60,6 +60,7 @@ export const searxngtor = async (args?: string[]): Promise<string> => {
 
   return `Opening My SearxNG Instance Tor Hidden Service. Use Engine Token 'unlockall' to use Google & Brave. Fuck Bots. `;
 };
+<<<<<<< HEAD
 export const paste = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://paste.0xgingi.com');
@@ -67,3 +68,5 @@ export const paste = async (args?: string[]): Promise<string> => {
 
   return `Opening paste.0xgingi.com - E2E Pastebin `;
 };
+=======
+>>>>>>> fe75be525812bc2c2e3627e5da7753761fb6840e
