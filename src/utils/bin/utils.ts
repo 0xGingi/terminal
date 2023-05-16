@@ -83,3 +83,11 @@ export const invidious = async (args?: string[]): Promise<string> => {
 
   return `Opening Invidious - Privacy Respecting YouTube Frontend `;
 };
+
+export const nitter = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://nitter.0xgingi.com');
+  }, 1000);
+
+  return `Opening nitter - Privacy Respecting Twitter Frontend `;
+};
