@@ -91,3 +91,11 @@ export const nitter = async (args?: string[]): Promise<string> => {
 
   return `Opening nitter - Privacy Respecting Twitter Frontend `;
 };
+
+export const privacytools = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://privacytools.0xgingi.com');
+  }, 1000);
+
+  return `Opening Privacy Tools `;
+};

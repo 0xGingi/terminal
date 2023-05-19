@@ -12,7 +12,7 @@
     "url": "https://github.com/0xGingi/terminal"
   },
   "scripts": {
-    "start": "next start",
+    "start": "next start -p 3054",
     "build": "next build",
     "dev": "next dev",
     "next": "next",
@@ -32,7 +32,7 @@
     "react-icons": "^4.8.0"
   },
   "devDependencies": {
-    "@types/node": "^20.1.5",
+    "@types/node": "^20.2.1",
     "@types/react": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.59.6",
     "@typescript-eslint/parser": "^5.59.6",

@@ -397,10 +397,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.1.5":
-  version: 20.1.5
-  resolution: "@types/node@npm:20.1.5"
-  checksum: 0d073ed7b9cc51e2354dcf3a8ccca84d08c7d513fa8fac9462cabc164435b30f2ad296e9f2f911e6ce72da837b704f1075379be84a93bb24f76d328a2d9e8561
+"@types/node@npm:^20.2.1":
+  version: 20.2.1
+  resolution: "@types/node@npm:20.2.1"
+  checksum: ed774afa6e9b4ad7868ed0182a8ca40ad0dd54815a70d3051b23fa850f3bca6bea4d0cb55e1fc769666786ac2cc4c1b37aeade313cb4c4634133f18ebcded496
   languageName: node
   linkType: hard
 
@@ -4551,7 +4551,7 @@ __metadata:
   dependencies:
     "@m4tt72/matomo-tracker-react": ^0.6.2
     "@types/jquery": ^3.5.16
-    "@types/node": ^20.1.5
+    "@types/node": ^20.2.1
     "@types/react": ^18.2.6
     "@typescript-eslint/eslint-plugin": ^5.59.6
     "@typescript-eslint/parser": ^5.59.6
