@@ -99,3 +99,12 @@ export const privacytools = async (args?: string[]): Promise<string> => {
 
   return `Opening Privacy Tools `;
 };
+
+export const encrypt = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://encrypt.0xgingi.com');
+  }, 1000);
+
+  return `Opening hat.sh instance - encrypt and decrypt files in your browser`;
+};
+
