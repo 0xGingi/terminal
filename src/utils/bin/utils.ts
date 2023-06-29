@@ -68,30 +68,6 @@ export const matrix = async (args?: string[]): Promise<string> => {
   return `Opening Matrix HomeServer / Element Client `;
 };
 
-export const libreddit = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://reddit.0xgingi.com');
-  }, 1000);
-
-  return `Opening Libreddit - Privacy Respecting Reddit Frontend `;
-};
-
-export const invidious = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://invidious.0xgingi.com');
-  }, 1000);
-
-  return `Opening Invidious - Privacy Respecting YouTube Frontend `;
-};
-
-export const nitter = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://nitter.0xgingi.com');
-  }, 1000);
-
-  return `Opening nitter - Privacy Respecting Twitter Frontend `;
-};
-
 export const privacytools = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://privacytools.0xgingi.com');
