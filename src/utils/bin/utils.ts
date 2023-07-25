@@ -84,14 +84,6 @@ export const encrypt = async (args?: string[]): Promise<string> => {
   return `Opening hat.sh instance - encrypt and decrypt files in your browser`;
 };
 
-export const privacymail = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://privacymail.zip');
-  }, 1000);
-
-  return `Opening privacymail.zip - a privacy focused invite/request only email service`;
-};
-
 export const browser = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://browser.0xgingi.com');
