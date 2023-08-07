@@ -60,13 +60,6 @@ export const searxngtor = async (args?: string[]): Promise<string> => {
 
   return `Opening My SearxNG Instance Tor Hidden Service. Use Engine Token 'unlockall' to use Google & Brave. Fuck Bots. `;
 };
-export const matrix = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://element.onionsherpa.com');
-  }, 1000);
-
-  return `Opening Matrix HomeServer / Element Client `;
-};
 
 export const privacytools = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
