@@ -23,31 +23,31 @@
   },
   "dependencies": {
     "@m4tt72/matomo-tracker-react": "^0.6.2",
-    "@types/jquery": "^3.5.16",
-    "axios": "^1.4.0",
+    "@types/jquery": "^3.5.18",
+    "axios": "^1.5.0",
     "date-fns": "^2.30.0",
-    "next": "^13.4.13",
+    "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1"
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.8",
-    "@types/react": "^18.2.18",
-    "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "^6.3.0",
-    "autoprefixer": "^10.4.14",
-    "eslint": "8.46.0",
-    "eslint-config-next": "^13.4.13",
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "autoprefixer": "^10.4.15",
+    "eslint": "8.48.0",
+    "eslint-config-next": "^13.4.19",
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
-    "postcss": "^8.4.27",
-    "prettier": "^3.0.1",
+    "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.6",
-    "yarn-audit-fix": "^10.0.0"
+    "typescript": "^5.2.2",
+    "yarn-audit-fix": "^10.0.1"
   },
   "packageManager": "yarn@3.5.0"
 }

@@ -39,28 +39,13 @@ export const hackthebox = async (args?: string[]): Promise<string> => {
 
   return `Opening my HTB Profile`;
 };
-export const onion = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('http://gingiwwd4tl3qedfnzielwdlnghnzztd4qiedvub54j4bj7rtz4u43yd.onion/');
-  }, 1000);
-
-  return `Opening Terminal Onion Link`;
-};
 export const searxng = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://search.0xgingi.com');
   }, 1000);
 
-  return `Opening My SearxNG Instance. Use Engine Token 'unlockall' to use Google & Brave. Fuck Bots. `;
+  return `Opening My SearxNG Instance. Use Engine Token 'iusearchbtw' to use Google & Brave. Fuck Bots. `;
 };
-export const searxngtor = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('http://searxyqdegtqksicnwpxa24ipnb2ylmp6iutnnwtazbhup4dit4eeyqd.onion/');
-  }, 1000);
-
-  return `Opening My SearxNG Instance Tor Hidden Service. Use Engine Token 'unlockall' to use Google & Brave. Fuck Bots. `;
-};
-
 export const privacytools = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://privacytools.0xgingi.com');
@@ -69,18 +54,18 @@ export const privacytools = async (args?: string[]): Promise<string> => {
   return `Opening Privacy Tools `;
 };
 
-export const encrypt = async (args?: string[]): Promise<string> => {
+export const brave_proxy = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://encrypt.0xgingi.com');
+    window.open('https://brave.0xgingi.com');
   }, 1000);
 
-  return `Opening hat.sh instance - encrypt and decrypt files in your browser`;
+  return `Opening Brave Proxy, a search proxy for brave search`;
 };
 
-export const browser = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://browser.0xgingi.com');
-  }, 1000);
+export const vaultwarden = async (args?: string[]): Promise<string> => {
+	setTimeout(function () {
+		window.open('https://vault.0xgingi.com');
+	}, 1000);
 
-  return `Opening 0xGingi-Browser - a privacy focused ungoogled-chromium fork`;
+	return `Opening Vaultwarden Instance`;
 };
