@@ -69,3 +69,13 @@ export const vaultwarden = async (args?: string[]): Promise<string> => {
 
 	return `Opening Vaultwarden Instance`;
 };
+
+export const aur = async (args?: string[]): Promise<string> => {
+	setTimeout(function (){
+		window.open('https://aur.archlinux.org/packages?K=0xGingi&SeB=m');
+	}, 1000);
+
+	return `Opening my AUR packages`;
+
+};
+
