@@ -131,7 +131,7 @@ docker: async (args: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://hub.docker.com/u/0xgingi');
   }, 1000);
-  return `Opening My Docker Repos!`;
+  return `Opening My Docker Profile!`;
 },
 github: async (args: string[]): Promise<string> => {
   setTimeout(function () {
