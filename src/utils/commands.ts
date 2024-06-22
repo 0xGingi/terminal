@@ -129,7 +129,7 @@ flipmmo: async (args: string[]): Promise<string> => {
 },
 docker: async (args: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://hub.docker.com/repositories/0xgingi');
+    window.open('https://hub.docker.com/u/0xgingi');
   }, 1000);
   return `Opening My Docker Repos!`;
 },
