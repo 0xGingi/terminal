@@ -20,10 +20,10 @@ COPY --from=builder /build/.next ./.next
 COPY --from=builder /build/node_modules ./node_modules
 COPY --from=builder /build/package.json ./package.json
 
-ENV PORT 3000
+ENV PORT 3054
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
-EXPOSE 3000
+EXPOSE 3054
 
 CMD ["node_modules/.bin/next", "start"]
