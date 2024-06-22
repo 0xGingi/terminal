@@ -2,13 +2,33 @@ import packageJson from '../../package.json';
 import themes from '../../themes.json';
 import { history } from '../stores/history';
 import { theme } from '../stores/theme';
+import { user } from '../stores/user';
 
 const hostname = window.location.hostname;
+let currentUser = 'guest';
 
 export const commands: Record<string, (args: string[]) => Promise<string> | string> = {
   help: () => 'Available commands: ' + Object.keys(commands).join(', '),
   hostname: () => hostname,
-  whoami: () => 'guest',
+  su: (args: string[]) => {
+    if (args[0] === 'root') {
+      const password = prompt('Password:');
+      if (password === 'root') {
+        user.set('root');
+        return 'Successfully switched to root.';
+      } else {
+        return 'Sorry, try again.';
+      }
+    } else {
+      return 'Usage: su root';
+    }
+  },
+  whoami: (args?: string[]) => {
+    if (args && args.length > 0) {
+      return 'whoami: expected no arguments, but got ' + args.length;
+    }
+    return currentUser;
+  },
   date: () => new Date().toLocaleString(),
   echo: (args: string[]) => args.join(' '),
   sudo: (args: string[]) => {
@@ -139,6 +159,17 @@ github: async (args: string[]): Promise<string> => {
   }, 1000);
   return `Opening My Github Profile!`;
 },
+flag: async (args: string[]): Promise<string> => {
+  let currentUser;
+  user.subscribe(value => currentUser = value);
 
-
+  if (currentUser === 'root') {
+    setTimeout(function () {
+      window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+    }, 1000);
+    return `You found me!`
+    } else {
+    return 'Permission denied.';
+  }
+},
 };
