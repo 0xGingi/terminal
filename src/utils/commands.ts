@@ -127,6 +127,18 @@ flipmmo: async (args: string[]): Promise<string> => {
   }, 1000);
   return `Opening FlipMMO - The Global Discord MMORPG!`;
 },
+docker: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://hub.docker.com/repositories/0xgingi');
+  }, 1000);
+  return `Opening My Docker Repos!`;
+},
+github: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://github.com/0xGingi/');
+  }, 1000);
+  return `Opening My Github Profile!`;
+},
 
 
 };
