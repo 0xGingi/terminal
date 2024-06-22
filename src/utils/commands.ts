@@ -10,9 +10,6 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
   hostname: () => hostname,
   whoami: () => 'guest',
   date: () => new Date().toLocaleString(),
-  vi: () => `why use vi? try 'emacs'`,
-  vim: () => `why use vim? try 'emacs'`,
-  emacs: () => `why use emacs? try 'vim'`,
   echo: (args: string[]) => args.join(' '),
   sudo: (args: string[]) => {
     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
@@ -78,11 +75,6 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
 
     return `Opening mailto:${packageJson.author.email}...`;
   },
-  donate: () => {
-    window.open(packageJson.funding.url, '_blank');
-
-    return 'Opening donation url...';
-  },
   weather: async (args: string[]) => {
     const city = args.join('+');
 
@@ -114,13 +106,27 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
     }
   },
   banner: () => `
-███╗   ███╗██╗  ██╗████████╗████████╗███████╗██████╗
-████╗ ████║██║  ██║╚══██╔══╝╚══██╔══╝╚════██║╚════██╗
-██╔████╔██║███████║   ██║      ██║       ██╔╝ █████╔╝
-██║╚██╔╝██║╚════██║   ██║      ██║      ██╔╝ ██╔═══╝
-██║ ╚═╝ ██║     ██║   ██║      ██║      ██║  ███████╗
-╚═╝     ╚═╝     ╚═╝   ╚═╝      ╚═╝      ╚═╝  ╚══════╝ v${packageJson.version}
+░█████╗░██╗░░██╗░██████╗░██╗███╗░░██╗░██████╗░██╗
+██╔══██╗╚██╗██╔╝██╔════╝░██║████╗░██║██╔════╝░██║
+██║░░██║░╚███╔╝░██║░░██╗░██║██╔██╗██║██║░░██╗░██║
+██║░░██║░██╔██╗░██║░░╚██╗██║██║╚████║██║░░╚██╗██║
+╚█████╔╝██╔╝╚██╗╚██████╔╝██║██║░╚███║╚██████╔╝██║
+░╚════╝░╚═╝░░╚═╝░╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝ v${packageJson.version}
 
-Type 'help' to see list of available commands.
+Type 'help' to see list of available commands
 `,
+hackthebox: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://app.hackthebox.com/users/641801');
+  }, 1000);
+  return `Opening my HTB Profile`;
+},
+flipmmo: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://wiki.flipmmo.com/');
+  }, 1000);
+  return `Opening FlipMMO - The Global Discord MMORPG!`;
+},
+
+
 };

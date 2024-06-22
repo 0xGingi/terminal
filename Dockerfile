@@ -12,5 +12,5 @@ RUN yarn build
 FROM lipanski/docker-static-website:latest
 COPY --from=builder /app/dist .
 COPY httpd.conf .
-EXPOSE 3000
-CMD ["/busybox", "httpd", "-f", "-v", "-p", "3000", "-c", "httpd.conf"]
+EXPOSE 3054
+CMD ["/busybox", "httpd", "-f", "-v", "-p", "3054", "-c", "httpd.conf"]

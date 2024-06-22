@@ -2,12 +2,11 @@ version: '3'
 
 services:
   terminal:
-    #image: ghcr.io/m4tt72/terminal:svelte
     build: .
     container_name: terminal
     restart: unless-stopped
     ports:
-      - 3000:3000
+      - 3054:3054
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:80"]
       interval: 200s
