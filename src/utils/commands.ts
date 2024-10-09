@@ -141,11 +141,11 @@ hackthebox: async (args: string[]): Promise<string> => {
   }, 1000);
   return `Opening my HTB Profile`;
 },
-flipmmo: async (args: string[]): Promise<string> => {
+eternals: async (args: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://wiki.flipmmo.com/');
+    window.open('https://wiki.eternalsonline.com/');
   }, 1000);
-  return `Opening FlipMMO - The Global Discord MMORPG!`;
+  return `Opening Eternals Online - The Global Discord MMORPG!`;
 },
 docker: async (args: string[]): Promise<string> => {
   setTimeout(function () {
