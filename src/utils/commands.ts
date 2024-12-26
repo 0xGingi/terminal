@@ -135,12 +135,6 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
 
 Type 'help' to see list of available commands
 `,
-hackthebox: async (args: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://app.hackthebox.com/users/641801');
-  }, 1000);
-  return `Opening my HTB Profile`;
-},
 eternals: async (args: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://wiki.eternalsonline.com/');
@@ -171,5 +165,11 @@ flag: async (args: string[]): Promise<string> => {
     } else {
     return 'Permission denied.';
   }
+},
+trustynotes: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://trustynotes.app/');
+  }, 1000);
+  return `Opening trustynotes!`;
 },
 };
