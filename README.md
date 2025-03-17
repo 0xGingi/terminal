@@ -1,3 +1,3 @@
-# [0xGingi | Terminal](https://0xgingi.com)
+# [0xGingi | Terminal](https://0xgingi.xyz)
 
 A terminal style website
