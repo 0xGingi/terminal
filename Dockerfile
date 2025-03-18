@@ -1,9 +1,9 @@
-FROM oven/bun:1 as dependencies
+FROM oven/bun:latest as dependencies
 WORKDIR /app
 COPY package.json bun.lockb ./
 RUN bun install --frozen-lockfile
 
-FROM oven/bun:1 as builder
+FROM oven/bun:latest as builder
 WORKDIR /app
 COPY . .
 COPY --from=dependencies /app/node_modules ./node_modules
