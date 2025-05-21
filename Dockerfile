@@ -1,16 +1,16 @@
-FROM node:alpine AS deps
+FROM node:23.11.1-alpine3.21 AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /deps
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
-FROM node:alpine AS builder
+FROM node:23.11.1-alpine3.21 AS builder
 WORKDIR /build
 COPY . .
 COPY --from=deps /deps/node_modules ./node_modules
 RUN yarn build && yarn install --production --ignore-scripts --prefer-offline
 
-FROM node:alpine AS runner
+FROM node:23.11.1-alpine3.21 AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
