@@ -2,7 +2,7 @@
   import { user } from '../stores/user';
   import { theme } from '../stores/theme';
   import { commands } from '../utils/commands';
-  let hostname = window.location.hostname;
+  let hostname = $state(window.location.hostname);
 </script>
 
 <h1 class="font-bold flex">
