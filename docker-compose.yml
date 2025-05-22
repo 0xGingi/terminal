@@ -6,7 +6,7 @@ services:
     ports:
       - 3054:3054
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      test: ["CMD", "curl", "-f", "http://localhost:3054"]
       interval: 200s
       timeout: 200s
       retries: 5

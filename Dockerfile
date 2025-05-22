@@ -9,8 +9,7 @@ COPY . .
 COPY --from=dependencies /app/node_modules ./node_modules
 RUN bun run build
 
-FROM lipanski/docker-static-website:latest
-COPY --from=builder /app/dist .
-COPY httpd.conf .
+FROM nginx:mainline
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 3054
-CMD ["/busybox-httpd", "-f", "-v", "-p", "3054", "-c", "httpd.conf"]
