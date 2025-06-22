@@ -102,7 +102,7 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
       return 'Usage: weather [city]. Example: weather Brussels';
     }
 
-    const weather = await fetch(`https://wttr.in/${city}?ATm`);
+    const weather = await fetch(`https://wttr.in/${city}?ATu`);
 
     return weather.text();
   },
