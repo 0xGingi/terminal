@@ -135,11 +135,47 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
 
 Type 'help' to see list of available commands
 `,
-eternals: async (args: string[]): Promise<string> => {
+nanochat: async (args: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://wiki.eternalsonline.com/');
+    window.open('https://nanochat.app');
   }, 1000);
-  return `Opening Eternals Online - The Global Discord MMORPG!`;
+  return `Opening nanochat!`;
+},
+pebble: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://github.com/nanogpt-community/pebble');
+  }, 1000);
+  return `Opening pebble!`;
+},
+longstories: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://longstories.ai');
+  }, 1000);
+  return `Opening longstories!`;
+},
+peroxide: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://github.com/0xGingi/peroxide');
+  }, 1000);
+  return `Opening peroxide!`;
+},
+'audiobook-discord-rpc': async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://github.com/0xGingi/audiobookshelf-discord-rpc');
+  }, 1000);
+  return `Opening audiobook-discord-rpc!`;
+},
+grimdark: async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://grimdark.0xgingi.xyz');
+  }, 1000);
+  return `Opening grimdark!`;
+},
+'nanogpt-cli': async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://github.com/nanogpt-community/nanogpt-cli');
+  }, 1000);
+  return `Opening nanogpt-cli!`;
 },
 github: async (args: string[]): Promise<string> => {
   setTimeout(function () {
