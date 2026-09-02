@@ -70,18 +70,11 @@ const projects: Project[] = [
     url: 'https://github.com/0xGingi/audiobookshelf-discord-rpc',
   },
   {
-    name: 'grimdark',
-    description: 'A dark themed web project.',
+    name: 'eternals',
+    description: 'Idle MMORPG.',
     stack: 'web',
     status: 'live',
-    url: 'https://grimdark.0xgingi.xyz',
-  },
-  {
-    name: 'nanogpt-cli',
-    description: 'Command-line tooling for NanoGPT.',
-    stack: 'cli',
-    status: 'public',
-    url: 'https://github.com/nanogpt-community/nanogpt-cli',
+    url: 'https://eternalsonline.com',
   },
   {
     name: 'moltly',
@@ -608,7 +601,6 @@ Type 'help' to see list of available commands
   peroxide: async (): Promise<string> => openProject(projectByName.get('peroxide')!),
   'audiobook-discord-rpc': async (): Promise<string> =>
     openProject(projectByName.get('audiobook-discord-rpc')!),
-  grimdark: async (): Promise<string> => openProject(projectByName.get('grimdark')!),
-  'nanogpt-cli': async (): Promise<string> => openProject(projectByName.get('nanogpt-cli')!),
+  eternals: async (): Promise<string> => openProject(projectByName.get('eternals')!),
   moltly: async (): Promise<string> => openProject(projectByName.get('moltly')!),
 };
