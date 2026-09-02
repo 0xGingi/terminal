@@ -508,8 +508,13 @@ Type 'help' to see list of available commands
 
     return entry.content();
   },
-  neofetch: () => {
+  neofetch: async (): Promise<string> => {
     const activeTheme = get(theme);
+    // ponytail: unauthenticated GitHub API, 60 req/hr; falls back to '?' if rate-limited
+    const repoCount = await fetch(`https://api.github.com/users/${githubUsername}`)
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((profile: { public_repos: number }) => String(profile.public_repos))
+      .catch(() => '?');
     return [
       '   0x000000      0xGingi@terminal',
       '   0x47494e      ----------------',
@@ -518,7 +523,7 @@ Type 'help' to see list of available commands
       '   0x4d494e      User: ' + get(user),
       '   0x414c00      Shell: svelte',
       '                 Theme: ' + activeTheme.name,
-      `                  Projects: ${projects.length}`,
+      `                  GitHub repos: ${repoCount}`,
       `                  Repo: ${packageJson.repository.url}`,
       `                  Email: ${packageJson.author.email}`,
     ].join('\n');
